@@ -8,4 +8,14 @@
     :- search "screencast"
         :- set "Vertical Offset" to "1". 
 
-3. 
+3. Mobile Preview Tip
+
+    Open CMD 
+        :- Type "ipconfig"
+            :- Check "IPv4" and copy it then..
+
+    ## Must ensure that your connected wifi is on "Private Network" not on "Public Network"
+
+    Open settings:
+        : - search "live preview"
+            :- change "Host IP" from "127.0.0.1" to "192.168.1.2"
