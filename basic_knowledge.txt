@@ -1,0 +1,42 @@
+# Basics of Web Development
+
+---
+
+## **Q. How Does a Website Work?**
+
+### **Ans:**
+1. A user enters a **URL** in their web browser.
+2. The browser sends a **request** to the web server hosting the website.
+3. The server processes the request and retrieves the necessary files (**HTML**, **CSS**, **JavaScript**, etc.).
+4. The browser receives the files and **renders** the website for the user.
+5. The user interacts with the website, and additional requests may be sent to the server as needed.
+
+----------------XXXXX------------------
+
+
+## **Q. Who Are the Client, Server, and Browser, and What Are Their Uses?**
+
+### **Ans:**
+1. **Client**:  
+   - The device or application (e.g., a user's computer or smartphone) that requests resources or services from a server.  
+   - It initiates communication by sending requests.
+
+2. **Server**:  
+   - A system that hosts resources (e.g., files, databases) and responds to client requests by providing the requested data or performing specific actions.
+
+3. **Browser**:  
+   - A software application (e.g., Chrome, Firefox) on the client side that interprets and displays web content received from the server, enabling user interaction.
+
+----------------XXXXX------------------
+
+## **Q. What is Backend?**
+
+### **Ans:**
+1. The **Backend** is the **server-side** of the website.
+2. It **stores and arranges data**, ensuring everything on the client side works fine.
+3. It is the part of the website that you **cannot see or interact with**.
+4. It is the portion of software that does not come in direct contact with the user.
+
+----------------XXXXX------------------
+
+## **Q. 

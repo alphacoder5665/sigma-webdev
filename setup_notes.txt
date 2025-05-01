@@ -1,0 +1,11 @@
+
+
+1. Right click and select "command palette" OR Ctrl+Shift+P.
+    :- to open command palette
+        :- search "screencast mode" select it.
+
+2. open  settings.
+    :- search "screencast"
+        :- set "Vertical Offset" to "1". 
+
+3. 
