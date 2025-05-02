@@ -19,3 +19,5 @@
     Open settings:
         : - search "live preview"
             :- change "Host IP" from "127.0.0.1" to "192.168.1.2"
+
+4. Shift + Tab is used for remove one indent in code editor.
