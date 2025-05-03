@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 12px;
+}
+
+.box {
+  border: 2px solid black;
+  /* width: 233px; */
+  width: 80vw;
+  height: 10vh;
+  margin: 10px auto;
+  /* Margin: auto; and width: 80vw; can be used only for block level element not for inline element 
+    Example:
+        Block level element: div, p,
+        Inline element: span*/
+  background-color: aquamarine;
+}
+
+.container {
+  border: 2px solid black;
+  /* width: 233px; */
+  width: 80vw;
+  height: 50vh;
+  margin: 23px auto;
+  /* Margin: auto; and width: 80vw; can be used only for block level element not for inline element 
+    Example:
+        Block level element: div, p,
+        Inline element: span*/
+  background-color: aquamarine;
+  font-size: 18px;
+}
+
+.container p {
+    /* font-size: 2em; */
+    font-size: 2rem;
+}

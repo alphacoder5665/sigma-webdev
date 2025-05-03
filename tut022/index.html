@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ##
+    
+    Let me explain in words what each sizing unit does with examples:
+
+    1. Pixels (px):
+    - Fixed unit: font-size: 24px; width: 100px; height: 50px;
+    - Example: <div style="width: 100px">This div is always 100 pixels wide</div>
+    - Use case: Borders, small fixed elements
+    - Reference: Material Design uses 16px as base font size
+
+    2. Viewport Width (vw):
+    - Scales with screen width: width: 50vw; font-size: 5vw;
+    - Example: <h1 style="font-size: 5vw">This heading is 5% of viewport width</h1>
+    - Use case: Hero sections, full-width elements
+    - Reference: Bootstrap uses vw for fluid containers
+
+    3. Viewport Height (vh):
+    - Scales with screen height: height: 100vh; min-height: 50vh;
+    - Example: <div style="height: 100vh">This div is full viewport height</div>
+    - Use case: Full-screen sections, hero images
+    - Reference: Modern landing pages often use 100vh
+
+    4. Root Em (rem):
+    - Based on root font size: font-size: 1.5rem; margin: 2rem;
+    - Example: <p style="font-size: 1.2rem">This text is 1.2x root size</p>
+    - Use case: Typography, consistent spacing
+    - Reference: HTML default root size is 16px
+
+    5. Em (em):
+    - Based on parent font: font-size: 2em; padding: 1em;
+    - Example: <div style="font-size: 20px"><span style="font-size: 1.5em">This is 30px</span></div>
+    - Use case: Component-specific scaling
+    - Reference: CSS Zen Garden uses em for typography
+
+    6. Percentage (%):
+    - Relative to parent: width: 50%; margin: 10%;
+    - Example: <div style="width: 50%">Half width of parent</div>
+    - Use case: Responsive layouts, grid systems
+    - Reference: CSS Grid often uses % for columns
+
+    7. Viewport Minimum and Maximum (vmin / vmax):
+    - Scales with smallest/largest viewport dimension:
+    - `vmin`: Based on the smaller of viewport's width or height
+    - `vmax`: Based on the larger of the two
+    - Example:
+    - <div style="font-size: 5vmin">This text scales with smaller side</div>
+    - <div style="font-size: 5vmax">This text scales with larger side</div>
+    - Use case: Truly responsive typography or elements that must adapt to both landscape and portrait
+    - Reference: Ideal for square elements or scaling UI across devices
+
+    8. Min/Max Width & Height:
+    - Set constraints on size: prevents elements from shrinking/growing beyond limits
+    
+    - `min-width`: Ensures an element doesn’t get narrower than a set value
+    - `min-height`: Ensures an element doesn’t get shorter than a set value
+    - `max-width`: Limits how wide an element can grow
+    - `max-height`: Limits how tall an element can grow
+    
+    - Example:
+    <div style="min-width: 200px; max-width: 600px">
+        This div will never be smaller than 200px or wider than 600px
+    </div>
+    
+    - Use case:
+    - Keep buttons readable on small screens
+    - Prevent images or containers from overflowing
+    - Create responsive components with flexible but bounded dimensions
+    
+    - Reference: Frequently used in responsive design and layout systems like Flexbox and CSS Grid
+
+    
+    
+      -->
+
+
+
+  
+
+
+
+
+
+
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatem id debitis accusantium
+            repudiandae autem deserunt aspernatur natus, vitae adipisci dolor cumque illum ducimus, explicabo quae
+            tempore asperiores nostrum obcaecati. In quos dolore eaque quod ipsa quaerat eveniet iure illum! Ipsa nobis
+            labore magni ea? Hic natus autem vel, laborum itaque quisquam iusto magni, sapiente sit earum quod totam
+            quas voluptas distinctio nesciunt, quaerat nihil velit et quo.
+        </p>
+    </div>
+
+    <!-- Font Size Inheritance and em Demo -->
+    <div style="font-size: 20px;">
+        <!-- Base font size is 20px -->
+        <p>Parent text (20px)</p>
+    
+        <div>
+            <!-- This inherits 20px from the parent -->
+            <p>Child text inherits 20px</p>
+    
+            <div style="font-size: 1.5em;">
+                <!-- 1.5em × 20px = 30px -->
+                <p>This text is 1.5em (30px) of parent (20px)</p>
+    
+                <div>
+                    <!-- Inherits 30px from the parent -->
+                    <p>This also becomes 30px through inheritance</p>
+    
+                    <div style="font-size: 2em;">
+                        <!-- 2em × 30px = 60px -->
+                        <p>This is 2em of 30px, so it’s 60px</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
