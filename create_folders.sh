@@ -6,8 +6,7 @@ read projectname
 mkdir $projectname #root folder
 echo "folder created...."
 
-touch $projectname/index.html
-echo "index.html file has been created...."
+
 
 
 echo " (+) File menu list"
@@ -22,26 +21,100 @@ read -p "Choose > " choose
 
 if [[ $choose == "1" ]]
 then
-    touch $projectname/styles.css
-    echo "styles.css file has been created...."
+    touch $projectname/index.html
+    cat <<EOF > $projectname/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    touch $projectname/scripts.js
-    echo "scripts.js file has been created...."
+    <!-- ##  -->
+
+
+    <!-- CURSOR_POSITION -->
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+EOF
+    echo "index.html file has been created...."
+    
+    touch $projectname/style.css
+    echo "style.css file has been created...."
+
+    touch $projectname/script.js
+    echo "script.js file has been created...."
 
 elif [[ $choose == "2" ]]
 then
-    touch $projectname/styles.css
-    echo "styles.css file has been created...."
+    touch $projectname/index.html
+    cat <<EOF > $projectname/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ##  -->
+
+
+    <!-- CURSOR_POSITION -->
+
+
+
+</body>
+</html>
+EOF
+    echo "index.html file has been created...."
+
+    touch $projectname/style.css
+    echo "style.css file has been created...."
 
 elif [[ $choose == "3" ]]
 then
-    touch $projectname/scripts.js
-    echo "scripts.js file has been created...."    
+    touch $projectname/index.html
+    cat <<EOF > $projectname/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ##  -->
+
+
+    <!-- CURSOR_POSITION -->
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+EOF
+    echo "index.html file has been created...."
+
+    touch $projectname/script.js
+    echo "script.js file has been created...."    
 
 else
     exit
 fi
-
+ 
 
 #cd $projectname
 

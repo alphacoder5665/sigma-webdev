@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: aqua;
+}
+
+.box1 {
+    /* background-color: aliceblue; */
+    color: yellowgreen;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid blue;
+    height: 180px;
+    /* width: 500px; */
+    box-sizing: border-box;
+}
+
+.box2 {
+    /* background-color: antiquewhite; */
+    color: blueviolet;
+    padding: 10px;
+    margin: 35px;
+    border: 2px solid blue;
+    height: 180px;
+    /* width: 500px; */
+    box-sizing: border-box;
+}
+
+/* ## Margin collapse concept  
+The provided CSS code demonstrates the concept of margin collapse and includes styles for various elements. Key points:
+
+1. **Global Reset**: The universal selector (`*`) resets all margins and paddings to `0` for consistency across browsers.
+
+2. **Box Model**: The `box-sizing: border-box;` ensures padding and border are included in the element's total width and height.
+
+3. **Margin Collapse**: Margin collapse occurs when the vertical margins of adjacent elements (e.g., parent and child elements) combine into a single margin instead of adding up.  
+    - For example, if `.box1` and `.box2` are placed one after the other, their vertical margins will collapse into a single margin equal to the larger of the two margins (25px in this case).
+
+*/

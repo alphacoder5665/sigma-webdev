@@ -1,0 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+/* FONTS  */
+
+h1 {
+    font-family: kalam, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    /* font-weight: 900; */
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    /* font-size: 35px; */
+    line-height: 2;
+    /* letter-spacing: 20px; */
+}
+
+h2 {
+    font-family: kalam;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    /* text-decoration-style: dotted; */
+    text-decoration-thickness: 7px;
+    /* text-indent: 45px; */
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.lorem {
+    border: 2px solid black;
+    width: 150px;
+    word-break: break-all;
+    /* text-overflow: clip;
+    overflow: hidden; */
+}
+
+ 
+
+
+
+

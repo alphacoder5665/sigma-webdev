@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity & Cascade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- CSS Specificity Notes -->
+    <div>
+      <h2>CSS Specificity Explained</h2>
+      <ul>
+        <li>
+          Specificity determines which CSS rule is applied when multiple rules
+          match the same element.
+        </li>
+        <li>
+          It is calculated based on the types of selectors used in the rule.
+        </li>
+        <li>
+          Inline styles have the highest specificity (e.g.,
+          <code>style="color: red;"</code>).
+        </li>
+        <li>
+          IDs have higher specificity than classes, attributes, and
+          pseudo-classes.
+        </li>
+        <li>
+          Classes, attributes, and pseudo-classes have higher specificity than
+          element selectors and pseudo-elements.
+        </li>
+        <li>
+          When specificity is the same, the last defined rule in the CSS is
+          applied.
+        </li>
+      </ul>
+      <h3>Examples:</h3>
+      <ul>
+        <li>
+          <code>#id { color: blue; }</code> has higher specificity than
+          <code>.class { color: red; }</code>.
+        </li>
+        <li>
+          <code>.class { color: red; }</code> or <u>Attribute:</u> &nbsp; <code>a[href*="example"] { font-size: 2em; }</code> or <u>Pseudo:</u> &nbsp; <code> a:hover { background-color: yellow; }</code> has higher specificity than
+          <code>div { color: green; }</code>.
+        </li>
+        <li>
+          Inline styles, e.g., <code>style="color: yellow;"</code>, override all
+          external or internal CSS rules.
+        </li>
+        <li>
+            <code>!important</code> override all CSS rules including Inline Styles.
+        </li>
+        <li id="bold">
+          Inline style > ID selector > Class or attribute selector > Element
+          selector > Universal selector.
+        </li>
+      </ul>
+
+      <h3>Values according to specificity:</h3>
+      <table border="2px">
+        <tr>
+          <th>Selector</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Universal</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Element</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Class or Attribute or Pseudo selector</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>ID</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Inline</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+            <td>!important</td>
+            <td>10000</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+  </body>
+</html>
