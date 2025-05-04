@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.box {
+    border: 2px solid blue;
+    padding: 34px;
+    margin: 33px;
+    box-shadow: 5px 15px 5px #888888;
+}
+
+.text-element {
+    margin: 34px;
+    text-shadow: 4px 2px 4px purple;
+    outline: 2px solid brown;
+    border: 2px solid yellow;
+    outline-offset: 24px;
+    border-radius: 20px;
+}
