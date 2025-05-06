@@ -1,0 +1,17 @@
+* {
+    /* margin: 4px;
+    padding: 4px; */
+}
+
+
+nav>ul>li {
+    /* list-style: none; */
+    /* background-color: yellow; */
+    border: 2px solid black;
+    /* list-style-position: inside; */
+    /* list-style-image: url("https://imgresizers.com/assets/images/bulb.svg"); */
+    list-style-type: "🔨";
+    /* list-style: disc inside url("https://imgresizers.com/assets/images/bulb.svg"); */
+
+}
+
